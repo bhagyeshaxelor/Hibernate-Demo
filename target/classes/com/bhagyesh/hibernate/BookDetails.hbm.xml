@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 21 Jan, 2013 3:07:23 PM by Hibernate Tools 3.4.0.CR1 -->
+
+<hibernate-mapping>
+	<class name="com.axelor.hibernate.BookDetails" table="BOOKDETAILS">
+		<id name="bookId" type="int">
+			<column name="BOOKID" />
+			<generator class="increment" />
+		</id>
+		<property name="bookName" type="java.lang.String">
+			<column name="BOOKNAME" />
+		</property>
+		<property name="authorName" type="java.lang.String">
+			<column name="AUTHORNAME" />
+		</property>
+		<property name="bookCost" type="int">
+			<column name="BOOKCOST" />
+		</property>
+	</class>
+</hibernate-mapping>
